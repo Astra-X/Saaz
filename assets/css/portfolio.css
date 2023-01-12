@@ -1,0 +1,465 @@
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap');
+@import url(responsive.css);
+
+html {
+    scroll-behavior: smooth;
+    background: url(/assets/pics/pro_back2.png);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto+Serif+SC',sans-serif;
+    background: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    box-sizing: border-box;
+
+}
+header
+{
+    position: relative;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 10px 10px 10px;
+    /* background: rgb(255, 255, 255); */
+    opacity: 0.5;
+    /* border-radius:20px ; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    border-radius: 50px;
+
+
+}
+.logo
+{
+    float:left;
+    text-align: center;
+    line-height: 60px;
+    font-size: 36px;
+    padding: 0 20px;
+    color:#ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    
+}
+nav
+{
+    float:right;
+}
+.clear
+{
+    clear: both;
+}
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    display: block;
+    /* position: relative; */
+    margin: 10px auto;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 20px;
+    /* background-color: black; */
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    background: #ff0000;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+@media (max-width: 1200px)
+{
+    header
+    {
+        margin: 20px;
+    }
+}
+@media (max-width: 768px)
+{
+    .mean-toggle
+    {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .mean-toggle:before
+    {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .mean-toggle.active:before
+    {
+        content: '\f00d';
+    }
+    nav
+    {
+        display:none;
+    }
+    nav.active
+    {
+        display:block;
+        width :100%;
+    }
+    nav.active ul
+    {
+        display: block;
+    }
+    nav.active ul li 
+    {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.portfolio {
+    width: 90%;
+    margin: 10% auto;
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    opacity: 0.9;
+    border-radius: 20px;
+    /* position: relative; */
+    height: 3000px;
+    text-align: center;
+
+
+
+}
+.about_ {
+    font-size: 30px;
+    color: white;
+}
+
+.about_:hover {
+    color: rgb(255, 0, 0);
+    
+}
+
+.about_1 {
+    padding: 10px;
+    text-align: left;
+}
+
+
+.bio{
+    color: grey;
+    font-size: 28px;
+
+}
+.bio:hover {
+    color: red;
+}
+
+
+.class:after{
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.head_pic {
+    /* border: 2px solid white; */
+    /* width: 400px; */
+
+    margin: auto;
+    text-align:center ;
+    float: left;
+    /* float: inline-end; */
+  }
+
+.bio1 {
+    color: aliceblue;
+    float: left;
+    width: 80%;
+    margin: auto;
+}
+
+
+.head_bio_2 {
+
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 28px;
+    text-align: center;
+    /* border: 2px solid white; */
+    /* margin: auto; */
+    width: 77%;
+    justify-content: center;
+
+    /* color: white; */
+    /* transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    padding-top: -1px; */
+    
+  }
+
+
+  span::before {
+    content: "Ethical Hacker";
+    animation: animate infinite 10s;
+    padding-left: 10px;
+  }
+  
+  @keyframes animate {
+  
+    0% {
+        content: "Speaker";
+    }
+  
+    25% {
+        content: "Web Developer";
+    }
+    50% {
+        content: "Ethical Hacker";
+    }
+  
+    75% {
+        content: "Security Researcher";
+    }
+  }
+
+.info_0 {
+    text-align: left;
+}
+
+
+
+.info_1 {
+    width: 45%;
+    /* margin: 20px auto; */
+    padding: 10px 10px 10px 10px;
+    /* border: 2px solid white; */
+    float: left;
+
+}
+
+.info_2 {
+    width: 45%;
+    /* margin: 20px auto; */
+    padding: 10px 10px 10px 10px;
+    /* border: 2px solid white; */
+    float: left;
+}
+
+.clients_1 {
+    /* background-color: rgb(125, 120, 120); */
+    background-color: transparent;
+    border-radius: 25px;
+
+    opacity: 0.8;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 30px 50px 30px 50px;
+    float: left;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    overflow-wrap:anywhere;
+    border: 2px solid red;
+    
+
+    
+
+}
+.clients_ {
+    display: flex;
+
+    /* display:block; */
+    text-align: center;
+    justify-content: center;
+    width: 100% auto  ;
+   
+    padding: 20px 20px 20px 20px;
+}
+
+.clients_1:hover {
+    /* background-color: rgb(255, 0, 0); */
+    background:linear-gradient(to bottom , red, black) ;
+    color: rgb(255, 255, 255);
+    transform: scale(1.01);
+}
+
+.skills_1{
+    color: white;
+    text-align: left;
+    margin: 10px;
+}
+.skills_{
+    margin: 50px;
+    width: auto;
+     
+}
+
+.ski_ {
+    color: gray;
+    font-size: 28px;
+    
+}
+
+.ski_:hover {
+    color: #ff0000;
+    
+    
+}
+.pro_{
+    margin: 25px;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+.pro {
+    background-color: #ff0000;
+    padding: 5px 2px 5px 2px ;
+    width: 65%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.pro1 {
+    background-color: #ff0000;
+    padding: 5px 2px 5px 2px ;
+
+    width: 90%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.pro2 {
+    background-color: #ff0000;
+    padding: 5px 2px 5px 2px ;
+
+    width: 80%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.pro3 {
+    background-color: #ff0000;
+    padding: 5px 2px 5px 2px ;
+
+    width: 90%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.pro4 {
+    background-color: #ff0000;
+    padding: 5px 2px 5px 2px ;
+
+    width: 50%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.interest {
+    color: gray;
+    font-size: 28px;
+    
+}
+
+.interest:hover {
+    color: #ff0000;
+    
+    
+}
+
+.inter_ {
+    display: flex;
+    /* display: block; */
+    
+    border-radius: 25px;
+    /* border: 2px solid white; */
+    /* width: 60%; */
+    justify-content: center;
+    margin: auto;
+
+
+    
+
+}
+.inter1{
+    display: flex;
+
+    background-color: rgb(67, 67, 67);
+
+    padding: 8px 0px 8px 0px ;
+    color: white;
+    text-align: right;
+    width: 20%;
+    border-radius: 25px;
+    margin: 5px ;
+    float: left;
+
+
+}
+
+.inter2{
+    display: flex;
+
+    background-color: rgb(67, 67, 67);
+
+    padding: 8px 0px 8px 0px ;
+    color: white;
+    text-align: right;
+    width: 20%;
+    border-radius: 25px;
+    margin: 5px;
+    float: left;
+
+
+}
+.inter1img{
+    /* width: 20%; */
+    text-align: center;
+    float: left;
+    /* border: 2px solid white; */
+    margin: auto;
+
+}
+.inter1text {
+    /* border: 2px solid white; */
+    text-align: left;
+    width: 80%;
+    float: left;
+    font-size: 10px;
+}
+
+.inter1:hover{
+    color: red;
+    background-color: black;
+}
+.inter2:hover{
+    color: red;
+    background-color: black;
+}
