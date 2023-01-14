@@ -5,7 +5,8 @@ html {
   background: url(/assets/pics/pro_back2.png);
   animation-delay: 5ms;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;height: 900px;
+
   /* position:fixed; */
   /* height: 5000px; */
 }
