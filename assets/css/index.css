@@ -2,7 +2,7 @@
 html {
   /* background-color: ; */
   scroll-behavior: smooth;
-  background: url(/assets/pics/pro_back2.png);
+  background: url(/assets/pics/pro_back1.jpg);
   animation-delay: 5ms;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -54,7 +54,7 @@ html {
 }
 
 header {
-  background: url(/assets/pics/pro_back2.png);
+  background: url(/assets/pics/pro_back1.jpg);
   object-fit: contain;
   
 }
