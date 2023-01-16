@@ -569,7 +569,7 @@ a.edu_{
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   }
   .btn:hover {
-    color: white;
+    color: rgb(0, 0, 0);
 
   }
 
@@ -586,7 +586,7 @@ a.edu_{
     top: 0;
     height: 490%;
     width: 140%;
-    background: #ff0000;
+    background: #ffffff;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
