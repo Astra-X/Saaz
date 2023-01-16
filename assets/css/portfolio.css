@@ -351,10 +351,10 @@ nav ul li a:hover
     width: 80%;
     background-color: gray;
     border-radius: 25px;
-    color: gray;
+    color: rgb(255, 255, 255);
 }
 .pro {
-    background-color: white;
+    background: linear-gradient(to right, rgb(56, 56, 56),rgb(203, 203, 203));
     padding: 5px 2px 5px 2px ;
     width: 65%;
     border-radius: 25px;
@@ -362,7 +362,8 @@ nav ul li a:hover
 }
 
 .pro1 {
-    background-color: white;
+    background: linear-gradient(to right, rgb(56, 56, 56),rgb(203, 203, 203));
+    
     padding: 5px 2px 5px 2px ;
 
     width: 90%;
@@ -371,7 +372,8 @@ nav ul li a:hover
 }
 
 .pro2 {
-    background-color: white;
+    background: linear-gradient(to right, rgb(56, 56, 56),rgb(203, 203, 203));
+    
     padding: 5px 2px 5px 2px ;
 
     width: 80%;
@@ -380,7 +382,8 @@ nav ul li a:hover
 }
 
 .pro3 {
-    background-color: white;
+    background: linear-gradient(to right, rgb(56, 56, 56),rgb(203, 203, 203));
+    
     padding: 5px 2px 5px 2px ;
 
     width: 90%;
@@ -389,7 +392,8 @@ nav ul li a:hover
 }
 
 .pro4 {
-    background-color: white;
+    background: linear-gradient(to right, rgb(56, 56, 56),rgb(203, 203, 203));
+
     padding: 5px 2px 5px 2px ;
 
     width: 50%;
@@ -400,29 +404,14 @@ nav ul li a:hover
 
 
 .pro5 {
-    background-color: white;
+    background: linear-gradient(to right, rgb(56, 56, 56),rgb(203, 203, 203));
+
     padding: 5px 2px 5px 2px ;
 
     width: 60%;
     border-radius: 25px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -436,7 +425,7 @@ nav ul li a:hover
 }
 
 .interest:hover {
-    color: #ff0000;
+    color: #ffffff;
     
     
 }
@@ -512,13 +501,14 @@ nav ul li a:hover
 }
 
 .edu_ {
-    background:linear-gradient(to bottom, rgb(255, 0, 0), rgb(242, 79, 79),rgb(237, 237, 237));
+    background:linear-gradient(to bottom, rgb(0, 0, 0),rgb(0, 0, 0), rgb(93, 93, 93),rgb(237, 237, 237));
     width: 70%;
     margin: auto;
     opacity: 0.9;
     border-radius: 25px;
     color: white;
     text-decoration: none;
+    border: 2px solid gray;
 
 }
 .edu_1 {
