@@ -4,9 +4,10 @@ html {
   scroll-behavior: smooth;
   background: url(/assets/pics/pro_back2.png);
   animation-delay: 5ms;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
   /* position:fixed; */
+  background-size: cover;
   /* height: 5000px; */
 }
 
@@ -53,11 +54,7 @@ html {
 
 }
 
-header {
-  background: url(/assets/pics/pro_back2.png);
-  object-fit: contain;
-  
-}
+
 
 .head_follow {
   width: 50%;
