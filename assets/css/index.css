@@ -6,6 +6,13 @@ html {
   /* animation-delay: 5ms; */
   background-repeat: no-repeat;
   background-size: cover;
+  background: url(/assets/pics/pro_back2.png);
+  animation-delay: 5ms;
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* position:fixed; */
+  background-size: cover;
+  /* height: 5000px; */
 }
 
 .head_top{
@@ -56,6 +63,7 @@ html {
       text-shadow: 2px 2px 10px rgb(117, 117, 117);
     }
   }
+
 
 
 
