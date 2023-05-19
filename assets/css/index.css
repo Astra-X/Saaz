@@ -6,12 +6,12 @@ html {
   /* animation-delay: 5ms; */
   background-repeat: no-repeat;
   background-size: cover;
-  background: url(/assets/pics/pro_back2.png);
+  /* background: url(/assets/pics/pro_back2.png); */
   animation-delay: 5ms;
   /* background-repeat: no-repeat; */
   /* background-attachment: fixed; */
   /* position:fixed; */
-  background-size: cover;
+  /* background-size: cover; */
   /* height: 5000px; */
 }
 
