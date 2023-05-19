@@ -2,12 +2,10 @@
 html {
   /* background-color: ; */
   scroll-behavior: smooth;
-  background: url(/assets/pics/pro_back2.png);
-  animation-delay: 5ms;
+  background: url(/assets/pics/back.jpg);
+  /* animation-delay: 5ms; */
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* position:fixed; */
-  /* height: 5000px; */
+  background-size: cover;
 }
 
 .head_top{
@@ -25,39 +23,41 @@ html {
   
 }
 
-.head_bio {
+.head_bio a{
   text-align: left;
+  text-decoration: none;
+  list-style: none;
+
   width: 100%;
-  /* margin: auto; */
-
   font-size: 36px;
-  /* border: 3px solid white; */
+
   font-family: 'Dancing Script', cursive;
-  /* transform: rotate(-10deg);
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
-  -o-transform: rotate(-10deg); */
-  color: white;
+
+  /* color: white; */
   text-shadow: 2px 2px 10px grey;
-  /* padding:-1px -20px -1px -1px; */
-  /* border: 3px solid black; */
-  /* padding-top: -22px; */
- 
-    
+  animation: fade 10s infinite;  
 }
 
-.head_bio:hover a {
-  color: rgb(253, 253, 253);
-  text-shadow: 2px 2px 12px white;
+  @keyframes fade {
+    0%{
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 2px 10px rgb(129, 129, 129);
+    }
 
-}
+    50%{
+      color: rgb(128, 128, 128);
+      text-shadow: 2px 2px 12px rgb(255, 255, 255);
+    }
 
-header {
-  background: url(/assets/pics/pro_back2.png);
-  object-fit: contain;
-  
-}
+
+    100%
+    {
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 2px 10px rgb(117, 117, 117);
+    }
+  }
+
+
 
 .head_follow {
   width: 50%;
@@ -97,7 +97,7 @@ header {
 }
 
 .links:hover{
-  filter: drop-shadow(5px 5px 20px rgb(255, 0, 0));
+  filter: drop-shadow(5px 5px 20px rgb(0, 0, 0));
   /* background-color: white;
   border-radius: 50%; */
 }
@@ -117,15 +117,16 @@ header {
 
 .nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 
   padding: 0 50px 0px 0px ;
 
 }
 
 .nav:hover a {
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 10px rgb(255, 0, 0);
+  color: rgb(139, 139, 139);
+  text-shadow: 2px 2px 10px rgb(255, 255, 255);
+  
 }
 
 .developed {
