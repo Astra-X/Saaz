@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.load {
+  padding-top: 300px;
+  text-align: center;
+  /* background-color: rgb(0, 0, 0); */
+  background: url(/assets/img/background.png);
+  height: 100vh;
+}
+#loader {
+  position: absolute;
+  left: 45%;
+  top: 80%;
+  z-index: 1;
+  width: 20%; 
+  /* background-color: #000; */
+  /* height: 100vh; */
+  height: 20px;
+  margin: -76px 0 0 -76px;
+  /* border: 16px solid #f3f3f3; */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-color: #ffffff;
+  border-radius: 50px;
+  /* border-radius: 100%; */
+  /* border-top: 16px solid #3498db; */
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+
+@-webkit-keyframes spin {
+
+}
+
+@keyframes spin {
+0% {
+  width: 5%;
+}
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  /* text-align: center; */
+
+}
+
+
+
+
+
+
+
+
+html {
+    background: url(/assets/img/wp5315397-macbook-gradient-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@font-face {
+  font-family: maclight;
+  src: url(/assets/fonts/SFPRODISPLAYTHINITALIC.OTF);
+}
+@font-face {
+    font-family: mac;
+    src: url(/assets/fonts/SFPRODISPLAYREGULAR.OTF);
+  }
+.navbar {
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    background-color: rgba(243, 215, 215, 0.4);
+
+    padding: 5px;
+    display: flex;
+
+    box-shadow:0px 5px 20px  gray;
+}
+
+.nav {
+
+    padding: 3px 10px ;
+
+    display: flex;
+}
+.left {
+    display: flex;
+    width: 50%;
+}
+.nav-links{
+    padding: 0px 10px;
+}
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    font-family: mac;
+}
+
+.right {
+    display: flex;
+    float: right;
+    text-align: right;
+    justify-content: right;
+    width: 50%;
+
+}
+.right a {
+    text-decoration: none;
+    color:black;
+    font-weight: 100;
+    font-size: 18px;
+    font-family: mac;
+}
+.page2 {
+    width:60%;
+    left: 25%;
+    border-collapse: collapse;
+    bottom: 0;
+    margin: 10px;
+    position: absolute;
+
+}
+.d {
+    display: flex;
+
+}
+.dock {
+    padding:5px 20px;
+    background-color: rgba(243, 215, 215, 0.4);
+    border-radius: 50px;
+}
+.dock-items  {
+    padding:0px 10px;
+    transition: all ease 0.2s;
+
+
+}
+.dock-items button {
+  background-color: transparent;
+  border: none;
+}
+.dock-items:hover {
+    scale: 1.5;
+    transform: translate3d(0px -200px 0px);
+}
+#active {
+    padding:0px 25px;
+    border-right: 0.5px solid rgb(199, 199, 199);
+    
+
+}
+#datetime {
+  font-family: mac;
+}
+
+
+
+.head-left hr {
+  transform: rotate(90deg);
+}
+.skill-left hr {
+  transform: rotate(90deg);
+  /* width: 100vh; */
+
+}
+
+
+
+
+
+
+
+.modal {
+    font-family: mac;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    border-radius: 50px;
+    bottom: 30%;
+    /* background-color: #fefefe; */
+    width: 80%;
+    left: 10%;
+    height: 60vh;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+  }
+  
+  /* The Close Button */
+
+  
+  .modal-header {
+    padding: 2px 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 95%;
+    border-radius: 50px;
+    margin: 10px auto;
+  }
+  
+  .modal-body {
+    /* padding: 2px 16px; */
+    line-height: 2.5;
+    background-color: rgba(255, 255, 255, 0.950);
+    height: 70vh;
+    overflow-y: scroll ;
+    border-radius: 25px;
+
+
+    /* background-color: rgba(0,0,0,0.7); */
+
+}
+
+.min {
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 2px;
+  width: 20px ;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(255, 0, 0);
+  margin: 2px;
+}
+.min:hover{
+
+cursor: none;
+}
+
+
+
+.min2 {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 2px;
+  width: 20px ;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(0, 255, 34);
+  margin: 2px;
+}
+
+
+
+.min3 {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 2px;
+  width: 20px ;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(238, 255, 0);
+  margin: 2px;
+}
+
+
+
+.bac {
+    padding: 10px 30px;
+    /* margin: 20px; */
+    display: flex;
+}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    /* background-color: #5cb85c; */
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  .about {
+    width: 50%;
+    margin: auto;
+    padding-top: 250px;
+    text-align: center;
+  }
+  .header {
+    /* opacity: 0; */
+    animation: openstart 5s ;
+  }
+  @keyframes openstart {
+    0% {
+    opacity: 0;
+    transform: scale(0);
+
+    }
+    50% {
+    opacity: 1;
+    transform: scale(1.2);
+
+
+
+
+    }
+    100% {
+      /* opacity: 0; */
+      /* transform: scale(0); */
+    }
+    
+  }
+  .header h1 {
+    font-size: 118px;
+    font-weight: 50;
+color: rgb(255, 255, 255);
+    /* font-style: italic; */
+    /* font-family: 'Satisfy', cursive; */
+    font-family: mac;
+  }
+  .header h3 {
+
+    font-size: 38px;
+width: 72%;
+    margin: auto;
+
+    /* border: 2px solid black; */
+    color: gray;
+    text-align: left;
+    font-family: mac;
+  }
+  .skill_ {
+    text-align: right;
+    width: 72%;
+    margin: auto;
+    font-size: 42px;
+    /* border: 2px solid black; */
+    font-weight: 200;
+    font-family: mac;
+  }
+  .header span::after {
+    content: "";
+float: right;
+    animation:ani 10s infinite;
+    transition: 10s  all ease;
+
+  }
+
+
+  .head {
+    padding:50px 50px 0px 50px;
+
+    width: 90%;
+    margin: auto;
+  }
+  .head h2 {
+    border-bottom: 1px solid gray;
+    width: 70%;
+    font-size: 48px;
+    /* margin: auto; */
+    color: gray;
+    /* border-right: 0.5px solid black; */
+
+  }
+
+  .head-content {
+    display: flex;
+  }
+
+  .head-left {
+    width: 30%;
+    padding: 0;
+  }
+  .head-right{
+    width: 60%;
+/* text-align: center;   */
+  }
+  .head2 {
+    line-height: 1.2;
+  }
+  .head2 h1 {
+    color: rgb(0, 0, 0);
+    /* text-align: center; */
+    font-weight: 400;
+    font-family: mac;
+    font-size: 78px;
+  }
+  .head2 h2 {
+    color: gray;
+  }
+  .head2 p {
+    color: #000;
+    font-size: 28px;
+    font-family: mac;
+  }
+.headtop {
+  text-align: left;
+}
+  .headtop span::after {
+    content: "";
+    animation:ani 10s infinite;
+    transition: 10s  all ease;
+    color: gray;
+  }
+
+  .head2-flex {
+    display: flex;
+  }
+  .head2-left {
+    display: flex;
+    width: 50%;
+  }
+  .lefthead p {
+    color: gray;
+    font-size: 20px;
+
+    padding: 16px ;
+  }
+  .righthead p {
+    line-height: 1.5;
+    font-size: 20px;
+    padding: 13px;
+  }
+
+#hed {
+  color: rgb(79, 79, 79);
+  font-size: 22px;
+  font-family: mac;
+  width: 80%;
+}
+.head3 {
+  display: flex;
+}
+
+.projects {
+  display: flex;
+}
+.pro {
+  font-size: 22px;
+  font-family: mac;
+  color: white;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 5px;
+  border-radius: 25px;
+}
+.pro h1 {
+  color: gray;
+}
+
+.skill-top {
+  /* text-align: center; */
+  /* padding:50px 50px 0px 50px; */
+
+  border-bottom: 1px solid gray;
+  width: 50%;
+  font-size: 58px;
+  margin: auto;
+  color: gray;
+}
+
+.skill {
+  /* border: 2px solid black; */
+  width: 100%;
+  text-align: left;
+  display: block;
+}
+.skills h4 {
+  font-size: 28px;
+  font-family: mac;
+}
+.linux {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  height: 20px;
+}
+.html {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  height: 20px;
+}
+
+
+.css{
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  height: 20px;
+}
+
+.python {
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  height: 20px;
+}
+
+.js {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  height: 20px;
+}
+
+
+.skillpage {
+  display: flex;
+}
+.skill-left{
+  width: 30%;
+
+}
+.skill-right{
+  width: 60%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes ani {
+    0%{
+      content: "UX|UI Developer";
+
+    }
+    20%{
+      content: "Ethical Hacker";
+
+    }
+    40%{
+      content: "Music Producer";
+
+    }
+    60%{
+      content: "Graphic Designer";
+
+    }
+    80%{
+      content: "Speaker";
+      
+    }
+    100%{
+      content: "UX|UI Developer";
+
+    }
+  }
