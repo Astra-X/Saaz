@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -517,77 +520,53 @@ float: right;
   color: gray;
 }
 
-.skill-top {
-  /* text-align: center; */
-  /* padding:50px 50px 0px 50px; */
 
-  border-bottom: 1px solid gray;
-  width: 50%;
-  font-size: 58px;
-  margin: auto;
-  color: gray;
-}
-
-.skill {
-  /* border: 2px solid black; */
-  width: 100%;
-  text-align: left;
-  display: block;
-}
-.skills h4 {
-  font-size: 28px;
-  font-family: mac;
-}
-.linux {
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
-  height: 20px;
-}
-.html {
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
-  height: 20px;
-}
-
-
-.css{
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
-  height: 20px;
-}
-
-.python {
-  width: 60%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
-  height: 20px;
-}
-
-.js {
-  width: 50%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 25px;
-  height: 20px;
-}
-
-
-.skillpage {
+.skill_header {
   display: flex;
+
+  
 }
-.skill-left{
+.skill-left {
   width: 30%;
-
 }
-.skill-right{
-  width: 60%;
-
+.skill-right {
+  width: 70%;
 }
 
+.skill-left h2 {
+  text-align: center;
+  font-size: 98px;
+
+}
 
 
+
+.skill-right h2 {
+  font-size: 98px;
+
+  color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+
+
+}
+
+
+.skill_flex {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+}
+.skills {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 25px;
+  width: 100%;
+  text-align: center;
+}
 
 
 
